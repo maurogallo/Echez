@@ -1,0 +1,25 @@
+import jenkins.model.Jenkins
+
+pipeline {
+   import jenkins.model.Jenkins
+
+   agent any
+
+   stages {
+      stage('cd') {
+         steps {
+         script {
+          executeTransactions()
+        }
+      }
+   }
+ }
+}
+
+def executeTransactions(){
+   sh " sshpass -f '1K+inus-@ws' ssh complarnet\\awsad@172.168.1.30 "
+}
+
+
+
+
