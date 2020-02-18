@@ -8,26 +8,33 @@ pipeline {
       stage('cd') {
          steps {
          script {
-          executeTransactions()
+         
           echo "prueba de pipeline"
           bat "cd / "
           bat "dir "
+          
+        }
+      }
+     
+ }
+ stage('Directorio Putty') {
+         steps {
+         script {
           echo "Directorio putty"
           bat "cd C://Program Files//PuTTY>"
           echo "conexion putty"
           bat "putty -ssh complarnet//awsad@172.168.1.30 -pw 1K+inus-@ws"
         }
       }
-      steps {
+     
+ }
+  stage('Conexion Putty') {
+         steps {
          script {
-          executeTransactions()
-          
+          echo "conexion putty"
+          bat "putty -ssh complarnet//awsad@172.168.1.30 -pw 1K+inus-@ws"
         }
       }
-   }
+     
  }
-}
-
-def executeTransactions(){
-   sh " sshpass -f '1K+inus-@ws' ssh complarnet\\awsad@172.168.1.30 "
 }
