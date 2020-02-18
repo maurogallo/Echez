@@ -10,6 +10,7 @@ pipeline {
          script {
           echo "prueba de pipeline"
           bat "cd C:\\Program Files\\PuTTY\\ "
+          bat "dir "
           }
       }
      
