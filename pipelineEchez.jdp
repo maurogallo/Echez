@@ -23,7 +23,7 @@ pipeline {
           echo "Directorio putty"
           bat "cd C://Program Files//PuTTY>"
           echo "conexion putty"
-          bat "putty -ssh complarnet//awsad@172.168.1.30 -pw 1K+inus-@ws"
+          bat "dir "
         }
       }
      
