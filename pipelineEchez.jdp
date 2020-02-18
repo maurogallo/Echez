@@ -12,14 +12,16 @@ pipeline {
           echo "prueba de pipeline"
           bat "cd / "
           bat "dir "
+          echo "Directorio putty"
+          bat "cd C://Program Files//PuTTY>"
+          echo "conexion putty"
+          bat "putty -ssh complarnet//awsad@172.168.1.30 -pw 1K+inus-@ws"
         }
       }
       steps {
          script {
           executeTransactions()
-          echo "prueba de pipeline"
-          bat "cd C://Program Files//PuTTY>"
-          bat "putty -ssh complarnet//awsad@172.168.1.30 -pw 1K+inus-@ws"
+          
         }
       }
    }
