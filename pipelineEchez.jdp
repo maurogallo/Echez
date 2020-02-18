@@ -1,7 +1,7 @@
 import jenkins.model.Jenkins
 
 pipeline {
-   
+
    agent any
 
    stages {
@@ -9,6 +9,7 @@ pipeline {
          steps {
          script {
           executeTransactions()
+          echo "prueba de pipeline"
         }
       }
    }
@@ -18,7 +19,3 @@ pipeline {
 def executeTransactions(){
    sh " sshpass -f '1K+inus-@ws' ssh complarnet\\awsad@172.168.1.30 "
 }
-
-
-
-
