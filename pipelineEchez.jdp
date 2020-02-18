@@ -4,12 +4,16 @@ pipeline {
 
    agent any
 
+   environment{
+      PATH_RUTA = "C:/Program Files/PuTTY/"
+   }
+
    stages {
       stage('cd') {
          steps {
          script {
           echo "prueba de pipeline"
-          bat "cd C:\\Program Files\\PuTTY\\ "
+          bat " 'cd ${PATH_DATA_COLLECTOR}' "
           bat "dir "
           }
       }
