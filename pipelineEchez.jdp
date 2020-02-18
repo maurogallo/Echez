@@ -9,13 +9,21 @@ pipeline {
          steps {
          script {
           echo "prueba de pipeline"
-          bat "cd .. "
-          bat "cd .. "
-        }
+          bat "cd C:/Program Files/PuTTY/ "
+          }
       }
      
  }
  stage('Directorio Putty') {
+         steps {
+         script {
+          echo "Directorio putty"
+           bat "dir "
+        }
+      }     
+  }
+
+  stage('Directorio Putty') {
          steps {
          script {
           echo "Directorio putty"
