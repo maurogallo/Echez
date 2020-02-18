@@ -18,7 +18,7 @@ pipeline {
          script {
           executeTransactions()
           echo "prueba de pipeline"
-          bat "cd C:\Program Files\PuTTY>"
+          bat "cd C://Program Files//PuTTY>"
           bat "putty -ssh complarnet//awsad@172.168.1.30 -pw 1K+inus-@ws"
         }
       }
