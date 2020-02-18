@@ -11,7 +11,7 @@ pipeline {
          
           echo "prueba de pipeline"
           bat "cd / "
-          bat "dir "
+         
           
         }
       }
@@ -21,21 +21,10 @@ pipeline {
          steps {
          script {
           echo "Directorio putty"
-          bat "cd C://Program Files//PuTTY>"
-          echo "conexion putty"
-          bat "dir "
+           bat "dir "
         }
-      }
-     
- }
-  stage('Conexion Putty') {
-         steps {
-         script {
-          echo "conexion putty"
-          bat "putty -ssh complarnet//awsad@172.168.1.30 -pw 1K+inus-@ws"
-        }
-      }
-     
+      }     
   }
+   
  }
 }
