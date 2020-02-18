@@ -13,7 +13,7 @@ pipeline {
          steps {
          script {
           echo "prueba de pipeline"
-          bat " 'cd ${PATH_DATA_COLLECTOR}' "
+          bat " 'cd ${PATH_DATA_COLLECTOR}'"
           bat "dir "
           }
       }
