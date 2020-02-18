@@ -13,7 +13,7 @@ pipeline {
          steps {
          script {
           echo "prueba de pipeline"
-          sh "cd ${PATH_RUTA}"
+          sh "cd '${PATH_RUTA}'"
           sh "dir "
           }
       }
