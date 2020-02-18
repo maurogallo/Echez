@@ -8,11 +8,9 @@ pipeline {
       stage('cd') {
          steps {
          script {
-         
           echo "prueba de pipeline"
-          bat "cd // "
-         
-          
+          bat "cd .. "
+          bat "cd .. "
         }
       }
      
