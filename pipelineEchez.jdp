@@ -23,14 +23,6 @@ pipeline {
       }     
   }
 
-  stage('Directorio Putty') {
-         steps {
-         script {
-          echo "Directorio putty"
-           bat "dir "
-        }
-      }     
-  }
    
  }
 }
