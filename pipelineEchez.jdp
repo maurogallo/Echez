@@ -9,7 +9,7 @@ pipeline {
          steps {
          script {
           echo "prueba de pipeline"
-          bat "cd C:\Program Files\PuTTY\ "
+          bat "cd C:'\\'Program Files\\PuTTY\\ "
           }
       }
      
