@@ -10,8 +10,8 @@ pipeline {
          script {
           executeTransactions()
           echo "prueba de pipeline"
-          sh "cd / "
-          sh "dir "
+          bat "cd / "
+          bat "dir "
         }
       }
    }
